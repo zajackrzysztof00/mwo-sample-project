@@ -1,13 +1,8 @@
 import java.util.List;
 
 public class AverageTimeCounter {
-    private List<PitStop> pitStops;
 
-    public AverageTimeCounter(List<PitStop> pitStops) {
-        this.pitStops = pitStops;
-    }
-
-    public double calc() {
+    public static double average(List<PitStop> pitStops) {
         if (pitStops == null || pitStops.isEmpty()) {
             return 0.0;
         }
@@ -18,6 +13,7 @@ public class AverageTimeCounter {
         }
 
         return sum / pitStops.size();
+
 
     }
 }
