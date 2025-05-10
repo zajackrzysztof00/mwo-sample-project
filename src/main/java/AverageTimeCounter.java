@@ -18,5 +18,6 @@ public class AverageTimeCounter {
         }
 
         return sum / pitStops.size();
+
     }
 }
