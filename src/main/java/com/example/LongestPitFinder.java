@@ -1,10 +1,11 @@
-import java.util.Date;
+package com.example;
+
 import java.util.List;
 
 public class LongestPitFinder {
     public static LongestPit longestPitFinder(List<PitStop> pitStops) {
-        int driverId = pitStops.getFirst().getDriver();
-        double pitTime = pitStops.getFirst().getDuration();
+        int driverId = pitStops.get(0).getDriver();
+        double pitTime = pitStops.get(0).getDuration();
 
         for (PitStop pitStop : pitStops) {
             if (pitTime > pitStop.getDuration()) {

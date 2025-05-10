@@ -1,4 +1,4 @@
-import java.util.Date;
+package com.example;
 
 public class LongestPit {
     private final int driver;
