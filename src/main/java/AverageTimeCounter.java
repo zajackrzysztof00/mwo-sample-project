@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class AverageTimeCounter {
+    public int totalTime = 0;
 
     public static double average(List<PitStop> pitStops) {
         if (pitStops == null || pitStops.isEmpty()) {
